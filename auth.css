@@ -1,0 +1,131 @@
+/* Background */
+
+body{
+margin:0;
+padding:0;
+font-family:'Segoe UI',sans-serif;
+background: radial-gradient(circle at top,#111827,#020617);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+/* Login/Register Card */
+
+.auth-container{
+width:380px;
+background:rgba(17,24,39,0.9);
+padding:40px;
+border-radius:14px;
+box-shadow:0 10px 40px rgba(0,0,0,0.8);
+backdrop-filter: blur(10px);
+}
+
+/* Title */
+
+.auth-title{
+text-align:center;
+font-size:32px;
+font-weight:bold;
+margin-bottom:25px;
+letter-spacing:1px;
+}
+
+/* Input fields */
+
+.auth-container input{
+width:100%;
+padding:12px;
+margin:12px 0;
+border-radius:6px;
+border:1px solid #374151;
+background:#020617;
+color:white;
+font-size:14px;
+transition:0.3s;
+}
+
+/* Input focus */
+
+.auth-container input:focus{
+outline:none;
+border-color:#22c55e;
+box-shadow:0 0 5px #22c55e;
+}
+
+/* Button */
+
+.auth-container button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+background:#22c55e;
+color:black;
+font-weight:bold;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Button hover */
+
+.auth-container button:hover{
+background:#16a34a;
+transform:scale(1.02);
+}
+
+/* Footer link */
+
+.auth-footer{
+text-align:center;
+margin-top:18px;
+font-size:14px;
+}
+
+.auth-footer a{
+color:#22c55e;
+text-decoration:none;
+}
+
+.auth-footer a:hover{
+text-decoration:underline;
+}
+
+/* Error message */
+
+.error{
+background:#dc2626;
+padding:10px;
+border-radius:6px;
+text-align:center;
+margin-bottom:10px;
+}
+
+/* Success message */
+
+.success{
+background:#16a34a;
+padding:10px;
+border-radius:6px;
+text-align:center;
+margin-bottom:10px;
+}
+
+/* Mobile responsive */
+
+@media(max-width:500px){
+
+.auth-container{
+width:90%;
+padding:30px;
+}
+
+.auth-title{
+font-size:26px;
+}
+
+}
